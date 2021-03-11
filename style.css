@@ -1,0 +1,99 @@
+/* Global style*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2.2rem;
+}
+
+nav {
+  display: flex;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Nav and Hero */
+.nav-container {
+  background: var(--blue);
+}
+
+.nav-container h1 {
+  color: white;
+  flex: 1 1 40rem;
+}
+
+.nav-container ul {
+  list-style: none;
+  flex: 1 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-container li {
+  margin: 2rem;
+}
+
+.hero {
+  display: flex;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/hero.jpg);
+  background-size: cover;
+  background-position: center top;
+  min-height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 2rem;
+}
+
+.hero button {
+  background: var(--lightblue);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Colors */
+:root {
+  --lightblue: rgb(85, 193, 255);
+  --blue: rgb(52, 89, 149);
+  --sand: rgb(245, 255, 144);
+}
