@@ -273,6 +273,10 @@ nav {
     min-height: 30vh;
     opacity: 1;
   }
+
+  .locations-header h2 h3 {
+    text-align: center;
+  }
 }
 
 /* Package styling*/
