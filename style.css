@@ -311,6 +311,7 @@ nav {
   background: var(--blue);
   padding: 2rem 0;
   width: 100%;
+  height: 20%;
 }
 
 .package h4 {
@@ -413,6 +414,7 @@ form button:hover {
   }
 
   .form-column {
+    padding: 1rem;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
@@ -439,6 +441,14 @@ footer p {
   height: 4rem;
   width: 4rem;
   margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .social {
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
+  }
 }
 /* Colors */
 :root {
