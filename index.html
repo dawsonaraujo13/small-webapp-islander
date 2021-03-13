@@ -10,15 +10,27 @@
     />
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="icons/island.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" />
     <title>Islander | Island Tourism</title>
   </head>
   <body>
     <header class="nav-container">
       <nav>
-        <h1 class="nav-logo">Islander</h1>
+        <div class="nav-logo">
+          <img class="nav-logo-icon" src="/icons/island.svg" alt="" />
+          <h1>Islander</h1>
+        </div>
         <ul>
-          <li><a href="">Locations</a></li>
+          <li><a href="#locations">Locations</a></li>
           <li><a href="">Packages</a></li>
           <li><a href="">Contact</a></li>
         </ul>
@@ -26,8 +38,101 @@
     </header>
     <section class="hero">
       <h2>Sun, Rum, and Fun!</h2>
-      <h3>Travel the Carribean with Islander <br />Book with us today.</h3>
+      <h3>Travel the Carribean with Islander. <br />Book with us today.</h3>
       <button>Book Now</button>
+    </section>
+    <section class="locations">
+      <header class="locations-header">
+        <h2>
+          Islander takes you to the most beautiful islands in the Carribean
+        </h2>
+        <h3>
+          From booking hotels to planning out excursions, we've got you covered.
+          <br />
+          All you have to worry about is enjoying the moment!
+        </h3>
+      </header>
+    </section>
+    <section class="locations-body-wrapper" id="locations">
+      <div class="location-block">
+        <h2>St.Lucia</h2>
+        <p>
+          "Equal parts beauty and mystique, Saint Lucia captivates anyone who
+          sets foot on her coastline. Always evocative, she welcomes visitors
+          with her soothing waves, warm beaches, and hospitable people. The only
+          sovereign nation to be named for a woman, the island personifies
+          adventure and inspiration. Her visitors invariably find themselves
+          reluctant to leave and eager to return."
+        </p>
+      </div>
+      <div class="location-block">
+        <h2>Dominican Republic</h2>
+        <p>
+          "The DR delights visitors with its mix of white-sand beaches and
+          "gingerbread" Victorian architecture. Nine hundred miles of Caribbean
+          coastline make the Hispaniola Island country a beach-lover’s paradise.
+          Day-trip to Puerto Plata and ride the cable car up Mount Isabel de
+          Torres, or groove to the steel drum beats of Cabarete nightlife. The
+          breezy palms and sparkling waters of Punta Cana make it a true
+          tropical paradise."
+        </p>
+      </div>
+      <div class="location-block">
+        <h2>Puerto Rico</h2>
+        <p>
+          "The best kept secret of The Bahamas is the country’s sheer size and
+          diversity. With 16 major islands, The Bahamas is an unmatched
+          destination, a heart-pounding adventure across 100,000 square miles of
+          the world’s clearest ocean."
+        </p>
+      </div>
+      <div class="location-block">
+        <h2>Bahamas</h2>
+        <p>
+          "The best kept secret of The Bahamas is the country’s sheer size and
+          diversity. With 16 major islands, The Bahamas is an unmatched
+          destination, a heart-pounding adventure across 100,000 square miles of
+          the world’s clearest ocean."
+        </p>
+      </div>
+    </section>
+    <section class="package-body-wrapper">
+      <header class="package-head">
+        <h2>Traveling has never been so easy</h2>
+        <h3>Flights, seafare, hotels, we cover it all and more.</h3>
+      </header>
+      <div class="packages">
+        <div class="package">
+          <div class="package-title">
+            <img src="/icons/plane-solid.svg" alt="" />
+          </div>
+          <h4>Flights</h4>
+          <p>
+            Flights included in all purchased trips, with variable class
+            options, and even airport pickup.
+          </p>
+        </div>
+        <div class="package">
+          <div class="package-title">
+            <img src="/icons/ship-solid.svg" alt="" />
+          </div>
+          <h4>Seafare</h4>
+          <p>
+            Ferries between islands paid for. Aswell as some private boat tours
+            and cruises.
+          </p>
+        </div>
+        <div class="package">
+          <div class="package-title">
+            <img src="/icons/bed-solid.svg" alt="" />
+          </div>
+          <h4>Hotels</h4>
+          <p>
+            We've partnered with the best hotels in the business to accommodate
+            your every need.
+          </p>
+        </div>
+      </div>
     </section>
   </body>
 </html>

@@ -10,13 +10,17 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 a {
   color: white;
   text-decoration: none;
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: 5.2rem;
 }
 
 h2 {
@@ -25,6 +29,10 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.8rem;
 }
 
 li,
@@ -42,6 +50,7 @@ nav {
   margin: auto;
   align-items: center;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 
 /* Nav and Hero */
@@ -49,20 +58,34 @@ nav {
   background: var(--blue);
 }
 
-.nav-container h1 {
+.nav-logo {
   color: white;
   flex: 1 1 40rem;
+  display: flex;
+  align-items: center;
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.nav-logo h1 {
+  padding-top: 1rem;
+}
+
+.nav-logo-icon {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 4px;
 }
 
 .nav-container ul {
   list-style: none;
-  flex: 1 1;
+  flex: 1 1 40rem;
   display: flex;
   justify-content: space-around;
 }
 
 .nav-container li {
   margin: 2rem;
+  border-bottom: 4px var(--lightblue) solid;
 }
 
 .hero {
@@ -79,16 +102,224 @@ nav {
   text-align: center;
 }
 
+.hero h2 {
+  padding: 2rem;
+  font-weight: bold;
+}
+
 .hero h3 {
   padding: 2rem;
 }
 
 .hero button {
+  color: white;
   background: var(--lightblue);
   border: none;
   padding: 1rem 2rem;
-  border-radius: 4px;
   cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+.hero button:hover {
+  background: var(--blue);
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 40%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .nav-logo {
+    justify-content: center;
+    padding: 1rem;
+  }
+}
+
+/* Locations styling*/
+
+.locations {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/locations.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.locations-header {
+  width: 90%;
+  color: white;
+}
+
+.locations-header h2 {
+  padding: 2rem 0;
+}
+
+.locations-header h3 {
+  padding: 2rem 0;
+}
+
+.locations-body-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.location-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  width: 50vw;
+  background-color: violet;
+  color: white;
+  padding: 1vh 2vw;
+  min-height: 50vh;
+  max-height: 50vh;
+}
+
+.location-block h2 {
+  flex: 1;
+}
+
+.location-block p {
+  flex: 3;
+  opacity: 0;
+}
+
+.location-block:hover p {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.location-block:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url(/img/st.lucia.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.location-block:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent), url(/img/dr.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.location-block:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(/img/pr.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.location-block:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url(/img/bahamas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.location-block:hover:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url(/img/st.lucia.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.location-block:hover:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url(/img/dr.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.location-block:hover:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url(/img/pr.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.location-block:hover:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url(/img/bahamas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 960px) {
+  .location-block {
+    flex: 1 1 100%;
+    min-height: 30vh;
+  }
+}
+
+/* Package styling*/
+
+.package-body-wrapper {
+}
+
+.package-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  background: var(--blue);
+  color: white;
+  text-align: center;
+}
+
+.package-head h2 {
+  padding: 2rem 0;
+  margin: 0 2rem;
+}
+
+.package-head h3 {
+  padding: 1rem 0;
+  margin: 0 2rem;
+}
+
+.packages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin: auto;
+  padding: 0 5%;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  background: white;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package-title {
+  display: flex;
+  justify-content: center;
+  background: var(--blue);
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.package h4 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.package p {
+  font-size: 2rem;
+  padding: 0rem 1rem;
+}
+
+.package img {
+  width: 15%;
 }
 
 /* Colors */
