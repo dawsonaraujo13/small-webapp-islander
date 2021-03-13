@@ -253,6 +253,36 @@ nav {
     flex: 1 1 100%;
     min-height: 30vh;
   }
+
+  .location-block:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+      url(/img/st.lucia.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .location-block:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+      url(/img/dr.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .location-block:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+      url(/img/pr.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .location-block:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+      url(/img/bahamas.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  location-block p {
+    flex: 3;
+    opacity: 0;
+  }
 }
 
 /* Package styling*/
