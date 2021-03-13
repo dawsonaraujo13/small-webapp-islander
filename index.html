@@ -31,8 +31,8 @@
         </div>
         <ul>
           <li><a href="#locations">Locations</a></li>
-          <li><a href="">Packages</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -96,7 +96,7 @@
         </p>
       </div>
     </section>
-    <section class="package-body-wrapper">
+    <section class="package-body-wrapper" id="packages">
       <header class="package-head">
         <h2>Traveling has never been so easy</h2>
         <h3>Flights, seafare, hotels, we cover it all and more.</h3>
@@ -126,6 +126,7 @@
           <div class="package-title">
             <img src="/icons/bed-solid.svg" alt="" />
           </div>
+
           <h4>Hotels</h4>
           <p>
             We've partnered with the best hotels in the business to accommodate
@@ -134,5 +135,64 @@
         </div>
       </div>
     </section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-form-wrapper">
+        <form action="">
+          <div class="form-row">
+            <div class="form-column">
+              <label for="first-name">First Name:</label>
+              <input type="text" name="first-name" required />
+            </div>
+            <div class="form-column">
+              <label for="last-name">Last Name:</label>
+              <input type="text" name="last-name" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-column">
+              <label for="email">Email:</label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="form-column">
+              <label for="text">Destination:</label>
+              <select name="destination" id="destination">
+                <option value="">St. Lucia</option>
+                <option value="">Domincan Republic</option>
+                <option value="">Puerto Rico</option>
+                <option value="">Bahamas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-column">
+              <label for="departure">Departure:</label>
+              <input type="date" name="departure" required />
+            </div>
+            <div class="form-column">
+              <label for="return">Return:</label>
+              <input type="date" name="return" required />
+            </div>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="social-media">
+        <a href="https://www.facebook.com/"
+          ><img class="social" src="/icons/facebook.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com/?hl=en"
+          ><img class="social" src="/icons/instagram.svg" alt=""
+        /></a>
+        <a href="https://twitter.com/?lang=en"
+          ><img class="social" src="/icons/twitter.svg" alt=""
+        /></a>
+      </div>
+      <p>Designed and built by: <i>Dawson Neves de Araujo</i></p>
+    </footer>
   </body>
 </html>
